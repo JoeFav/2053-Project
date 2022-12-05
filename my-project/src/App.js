@@ -1,13 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import ListOfRecipes from './ListOfRecipes';
-import RecipeDescription from './RecipeDetail';
+import logo from './logo.svg';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
-    //Use the NavigationContainer and the Stack to display your app
-    //FlatListOfRecipes is just here as a place holder.
-    <ListOfRecipes />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
+export default App;
